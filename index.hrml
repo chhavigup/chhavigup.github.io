@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Don't Need Sponsorship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            margin-top: 100px;
+        }
+
+        #firework {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation: firework 1s infinite alternate;
+        }
+
+        #click-me {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #info-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes firework {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>I Don't Need Sponsorship</h1>
+        <div id="firework"></div>
+        <button id="click-me">Click Me!</button>
+        <div id="info-box">
+            <p>This is the detailed information about why I don't need sponsorship.</p>
+            <p>You can customize this section with your own content.</p>
+        </div>
+    </div>
+
+    <script>
+        const clickMeBtn = document.getElementById('click-me');
+        const infoBox = document.getElementById('info-box');
+
+        clickMeBtn.addEventListener('click', () => {
+            infoBox.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
